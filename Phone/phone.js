@@ -306,7 +306,6 @@ $(document).ready(function () {
     // Even if the setting is defined on the database, these variabled get loaded after.
 
     var options = (typeof phoneOptions !== 'undefined')? phoneOptions : {};
-    if(options.welcomeScreen !== undefined) welcomeScreen = options.welcomeScreen;
     if(options.loadAlternateLang !== undefined) loadAlternateLang = options.loadAlternateLang;
     if(options.profileUser !== undefined) profileUser = options.profileUser;
     if(options.profileName !== undefined) profileName = options.profileName;
@@ -1062,15 +1061,6 @@ function InitUi(){
         UpdateUI();
     }
 
-    // Show Welcome Screen
-    if(welcomeScreen){
-        if(localDB.getItem("WelcomeScreenAccept") != "yes"){
-            OpenWindow(welcomeScreen, lang.welcome, 480, 800, true, false, lang.accept, function(){
-                localDB.setItem("WelcomeScreenAccept", "yes");
-                CloseWindow();
-            }, null, null, null, null);
-        }
-    }
 
     PreloadAudioFiles();
 
