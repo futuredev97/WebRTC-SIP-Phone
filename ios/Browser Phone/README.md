@@ -1,4 +1,4 @@
-#  iOS Browser Phone App
+#  iOS WebRTC SIP Phone App
 
 This application makes use of the SFSafariViewController. It's almost exactly the same as running the page in the Safari Browser. There are known limitations to this. 
 
