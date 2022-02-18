@@ -1,8 +1,8 @@
 //
-//  SceneDelegate.swift
-//  Browser Phone
+//  AppDelegate.swift
+//  Webrtc sip Phone
 //
-//  Created by Conrad de Wet on 2022/01/18.
+//  Created by beatific angel on 2022/01/18.
 //
 
 import UIKit
