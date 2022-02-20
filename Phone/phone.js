@@ -1,6 +1,6 @@
 /**
 * ====================
-*  ☎️ WEBRTC SIP Phone ☎️ 
+*  WEBRTC SIP Phone 
 * ====================
 * A fully featured browser based WebRTC SIP phone for Asterisk
 * -------------------------------------------------------------
@@ -9,8 +9,7 @@
 * File: phone.js
 * License: GNU Affero General Public License v3.0
 * Owner: Beatific Angel
-* Date: April 2020
-* Git: https://github.com/beatificangel/Browser-Phone
+* Git: https://github.com/beatificangel
 */
 
 // Global Settings
