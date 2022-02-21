@@ -1594,7 +1594,6 @@ function ReceiveCall(session) {
     var answerTimeout = 1000;
     if (!AutoAnswerEnabled  && IntercomPolicy == "enabled"){ // Check headers only if policy is allow
 
-        // https://github.com/InnovateAsterisk/Browser-Phone/issues/126
         // Alert-Info: info=alert-autoanswer
         // Alert-Info: answer-after=0
         // Call-info: answer-after=0; x=y
@@ -1645,7 +1644,6 @@ function ReceiveCall(session) {
                 // In order for this to work nicely, the recipient maut be "ready" to accept video calls
                 // In order to ensure video call compatibility (i.e. the recipient must have their web cam in, and working)
                 // The NULL video sould be configured
-                // https://github.com/InnovateAsterisk/Browser-Phone/issues/26
                 if(videoInvite) {
                     AnswerVideoCall(lineObj.LineNumber);
                 }
@@ -1673,7 +1671,7 @@ function ReceiveCall(session) {
 
                 var lineNo = lineObj.LineNumber;
                 window.setTimeout(function(){
-                    // https://github.com/InnovateAsterisk/Browser-Phone/issues/26
+
                     if(videoInvite) {
                         AnswerVideoCall(lineNo)
                     }
@@ -12613,8 +12611,7 @@ function XmppGetBuddies(){
 
                 // console.log("Register Buddy", buddyItem);
 
-                // <item xmlns="jabber:iq:roster" jid="58347g3721h~800@xmpp-eu-west-1.innovateasterisk.com" name="Alfredo Dixon" subscription="both"/>
-                // <item xmlns="jabber:iq:roster" jid="58347g3721h~123456@conference.xmpp-eu-west-1.innovateasterisk.com" name="Some Group Name" subscription="both"/>
+
 
                 var jid = buddyItem.getAttribute("jid");
                 var displayName = buddyItem.getAttribute("name");
@@ -12666,11 +12663,7 @@ function XmppGetBuddies(){
 function onBuddySetRequest(iq){
     console.log('onBuddySetRequest', iq);
 
-    // <iq xmlns="jabber:client" type="result" id="4e9dadc7-145b-4ea2-ae82-3220130231ba" to="yas43lag8l@xmpp-eu-west-1.innovateasterisk.com/4gte25lhkh">
-    //     <query xmlns="jabber:iq:roster" ver="1386244571">
-    //          <item jid="800@xmpp-eu-west-1.innovateasterisk.com" name="Alfredo Dixon" subscription="both"/>
-    //     </query>
-    // </iq>
+
 
     return true;
 }
@@ -13175,10 +13168,7 @@ function onPingRequest(iq){
     return true;
 }
 function onVersionRequest(iq){
-    // Handle Request for our version etc
-    // <iq xmlns="jabber:client" type="get" id="419-24" to=".../..." from="innovateasterisk.com">
-    //     <query xmlns="jabber:iq:version"/>
-    // </iq>
+    
     var id = iq.getAttribute("id");
     var to = iq.getAttribute("to");
     var from = iq.getAttribute("from");
