@@ -95,21 +95,21 @@ $ mkdir /home/csr
 ````
 Create a Root CA Key:
 ```
-$ openssl genrsa -des3 -out /home/ca/InnovateAsterisk-Root-CA.key 4096
+$ openssl genrsa -des3 -out /home/ca/cert-Root-CA.key 4096
 ```
 (Remember the password you used)
 Create Root Certificate Authority Certificate:
 ```
-$ openssl req -x509 -new -nodes -key /home/ca/InnovateAsterisk-Root-CA.key -sha256 -days 3650 -out /home/ca/InnovateAsterisk-Root-CA.crt
+$ openssl req -x509 -new -nodes -key /home/ca/cert-Root-CA.key -sha256 -days 3650 -out /home/ca/cert-Root-CA.crt
 ```
 Something like this should be fine:
 ```
 Country Name (2 letter code) [AU]: GB
 State or Province Name (full name) [Some-State]: None
 Locality Name (eg, city) []: None
-Organization Name (eg, company) [Internet Widgits Pty Ltd]: Innovate Asterisk
-Organizational Unit Name (eg, section) []: www.innovateasterisk.com
-Common Name (e.g. server FQDN or YOUR name) []: Innovate Asterisk Root CA
+Organization Name (eg, company) [Internet Widgits Pty Ltd]:  Asterisk
+Organizational Unit Name (eg, section) []: www.test.com
+Common Name (e.g. server FQDN or YOUR name) []:  Asterisk Root CA
 Email Address []: youremailgoes@here
 ```
 Generate Certificate Signing Request & Private Key:
@@ -213,18 +213,15 @@ $ cd ~
 ```
 Clone the git project:
 ```
-$ git clone https://github.com/InnovateAsterisk/Browser-Phone.git
+$ git clone https://github.com
 ```
 Copy the config files:
 ```
-$ sudo cp /home/Browser-Phone/config/* /etc/asterisk/
+$ sudo cp /home/webrtc-sip-phone/config/* /etc/asterisk/
 ```
 Clear the existing files in static-http:
 ```
 $ sudo rm /var/lib/asterisk/static-http/*
-```
-Copy the web pages:
-> Note: You can skip this step and simply use the hosted pages at: https://www.innovateasterisk.com/phone/ (contains a welcome screen). This page uses a Let's Encrypt Certificate, but you will still need to have a secure connection to your Asterisk box.
 ```
 $ sudo cp /home/Browser-Phone/Phone/* /var/lib/asterisk/static-http/
 ```
