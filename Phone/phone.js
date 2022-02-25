@@ -1150,8 +1150,7 @@ function PreloadAudioFiles(){
     audioBlobs.Alert = { file : "Alert.mp3", url : hostingPrefex +"media/Alert.mp3" }
     audioBlobs.Ringtone = { file : "Ringtone_1.mp3", url : hostingPrefex +"media/Ringtone_1.mp3" }
     audioBlobs.speech_orig = { file : "speech_orig.mp3", url : hostingPrefex +"media/speech_orig.mp3" }
-    audioBlobs.Busy_UK = { file : "Tone_Busy-UK.mp3", url : hostingPrefex +"media/Tone_Busy-UK.mp3" }
-    audioBlobs.Busy_US = { file : "Tone_Busy-US.mp3", url : hostingPrefex +"media/Tone_Busy-US.mp3" }
+    audioBlobs.Busy_US = { file : "Tone_Busy.mp3", url : hostingPrefex +"media/Tone_Busy.mp3" }
     audioBlobs.CallWaiting = { file : "Tone_CallWaiting.mp3", url : hostingPrefex +"media/Tone_CallWaiting.mp3" }
     audioBlobs.Congestion_UK = { file : "Tone_Congestion-UK.mp3", url : hostingPrefex +"media/Tone_Congestion-UK.mp3" }
     audioBlobs.Congestion_US = { file : "Tone_Congestion-US.mp3", url : hostingPrefex +"media/Tone_Congestion-US.mp3" }
