@@ -1152,11 +1152,7 @@ function PreloadAudioFiles(){
     audioBlobs.speech_orig = { file : "speech_orig.mp3", url : hostingPrefex +"media/speech_orig.mp3" }
     audioBlobs.Busy_US = { file : "Tone_Busy.mp3", url : hostingPrefex +"media/Tone_Busy.mp3" }
     audioBlobs.CallWaiting = { file : "Tone_CallWaiting.mp3", url : hostingPrefex +"media/Tone_CallWaiting.mp3" }
-    audioBlobs.Congestion_UK = { file : "Tone_Congestion-UK.mp3", url : hostingPrefex +"media/Tone_Congestion-UK.mp3" }
     audioBlobs.Congestion_US = { file : "Tone_Congestion-US.mp3", url : hostingPrefex +"media/Tone_Congestion-US.mp3" }
-    audioBlobs.EarlyMedia_Australia = { file : "Tone_EarlyMedia-Australia.mp3", url : hostingPrefex +"media/Tone_EarlyMedia-Australia.mp3" }
-    audioBlobs.EarlyMedia_European = { file : "Tone_EarlyMedia-European.mp3", url : hostingPrefex +"media/Tone_EarlyMedia-European.mp3" }
-    audioBlobs.EarlyMedia_Japan = { file : "Tone_EarlyMedia-Japan.mp3", url : hostingPrefex +"media/Tone_EarlyMedia-Japan.mp3" }
     audioBlobs.EarlyMedia_UK = { file : "Tone_EarlyMedia-UK.mp3", url : hostingPrefex +"media/Tone_EarlyMedia-UK.mp3" }
     audioBlobs.EarlyMedia_US = { file : "Tone_EarlyMedia-US.mp3", url : hostingPrefex +"media/Tone_EarlyMedia-US.mp3" }
     
