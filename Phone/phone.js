@@ -9,7 +9,7 @@
 * File: phone.js
 * License: GNU Affero General Public License v3.0
 * Owner: Beatific Angel
-* Git: https://github.com/beatificangel
+* Git: https://github.com/Beatific-Angel/WebRTC-SIP-Phone
 */
 
 // Global Settings
@@ -9054,7 +9054,7 @@ function RedrawStage(lineNum, videoChanged){
 
 }
 function StageArea(Increment, Count, Width, Height, Margin, videoRatio) {
-    // Thnaks:  https://github.com/Alicunde/Videoconference-Dish-CSS-JS
+
     let i = w = 0;
     let h = Increment * videoRatio + (Margin * 2);
     while (i < (Count)) {
